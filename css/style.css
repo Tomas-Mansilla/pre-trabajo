@@ -21,8 +21,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 2px;
-    border: 1px solid black;
+    margin: 3px black;
+    border: 3px solid black;
 }
 
 
@@ -453,7 +453,7 @@ body {
     margin: 45px;
 }
 
-.social img {
+.social img{
     padding: 5px;
     width: 50px;
     height: 50px;
@@ -473,6 +473,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
+
 }
 
 .map {
