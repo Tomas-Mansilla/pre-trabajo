@@ -4,12 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ninfa Pet Shop</title>
+    <title>Ninfa Pet Shop / forrajeria y productos exoticos</title>
     <!--boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--css-->
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.css">-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!--! 8( FAVICON-->
+    <link rel="shortcut icon" href="./img/perico.fv.ico" type="image/x-icon">
+    <!--! 9) KEYWORDS-->
+    <meta name="keywords"
+        content="forrajeria, mezcla pajaro, comida perro, productos de animales, perro, gato, peces, exoticos, bebedero pajaro, roedores">
+    <!--! 10) DESCRIPTION-->
+    <meta name="description"
+        content="forrajeria con variedad de productos para animales, mezclas premium de cualquer variedad">
+    <!--! 11) OPEN GRAPH -->
+    <!--type-->
+    <meta property="og:type" content="E-commerce">
+    <!--title-->
+    <meta property="og:title" content="Ninfa Pet Shop / forrajeria y productos exoticos">
+    <!--URL-->
+    <meta property="og:url" content="">
+    <!--image-->
+    <meta property="og:image" content="">
+    <!--description-->
+    <meta property="og:description"
+        content="forrajeria con variedad de productos para animales, mezclas premium de cualquer variedad">
+
+
+
+
 </head>
 
 <body>
@@ -17,19 +42,25 @@
         <h1>Ninfa Pet Shop</h1>
         <nav class="nav nav-pills flex-column flex-sm-row">
             <ul>
-                <li> <a class="flex-sm-fill text-sm-center nav-link" aria-current="page"
-                        href="./pages/productos.html">productos</a></li>
-                <li> <a class="flex-sm-fill text-sm-center nav-link" href="./pages/nosotros.html">nosotros</a></li>
-                <li> <a class="flex-sm-fill text-sm-center nav-link" href="./pages/peces.html">peces</a></li>
-                <li> <a class="flex-sm-fill text-sm-center nav-link" href="./pages/exoticos.html">exoticos</a></li>
-                <li> <a class="flex-sm-fill text-sm-center nav-link" href="./index.html">inicio</a></li>
-
+                <li><a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+                <li><a class="flex-sm-fill text-sm-center nav-link" href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a class="flex-sm-fill text-sm-center nav-link" href="./pages/productos.html">Productos</a></li>
+                <li><a class="flex-sm-fill text-sm-center nav-link" href="./pages/exoticos.html">Exóticos</a></li>
+                <li><a class="flex-sm-fill text-sm-center nav-link" href="./pages/peces.html">Peces</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="img-logo">
+        <!--! 1) TITLE:-->
+        <!--! 2)Jerarquia de los titulos-->
 
+
+
+        <!--! 3) Enlances-->
+
+        <section class="img-logo">
+            <img src="./img/ninfapet.jpg" alt="Logo de Ninfa Pet Shop">
         </section>
         <section class="hero">
             <h2>Ninfa Pet Shop</h2>
@@ -41,10 +72,12 @@
         </section>
         <section class="iframe">
             <h2>Bienvenidos a Ninfapetshop</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/bNfjR6W2RtA?si=cR3H4v7zcwE17"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bNfjR6W2RtA?si=cR3H4v7zcwE17"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </p>
         </section>
         <section class="img">
             <div class="img-contenedor">
@@ -54,7 +87,8 @@
                     <a href="">PRODUCTOS</a>
                 </div>
                 <div>
-                    <img src="./img/perro.jpg" alt="perro muy parecido a un lobo en un camino der tierra ">
+                    <img src="./img/perro-lobo-fondo-atardecer-epico (1).jpg"
+                        alt="perro muy parecido a un lobo en un camino der tierra ">
                     <h2>Perro</h2>
                     <a href="">PRODUCTOS</a>
                 </div>
@@ -81,13 +115,66 @@
             </div>
         </section>
     </main>
+
+
+    <section class="reg-flex">
+        <div>
+            <label for="">Nombre</label>
+            <input type="text" name="" id="nombre">
+        </div>
+        <div>
+            <label for="">Apellido</label>
+            <input type="text" name="" id="apellido">
+        </div>
+        <div>
+            <label for="">Contraseña</label>
+            <input type="password" name="" id="contrasena">
+        </div>
+        <div>
+            <label for="">Correo</label>
+            <input type="email" name="" id="correo">
+        </div>
+        <div>
+            <label for="">genero:</label>
+            <div>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero">
+
+                <label for="femenino">Femenino</label>
+                <input type="radio" name="genero">
+
+                <label for="otro">otro</label>
+                <input type="radio" name="genero">
+            </div>
+        </div>
+        <div>
+            <select name="" id="">
+                <option value="">Argetina</option>
+                <option value="">Estados Unidos</option>
+                <option value="">China</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Escribe tu Comentario</label>
+            <textarea name="" id="" cols="15" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit">
+            <input type="reset">
+
+        </div>
+    </section>
+    </section>
+
     <footer class="social">
         <h2>Nuestras Redes Sociales</h2>
         <div class="social-flex">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24267.759589006582!2d-64.19471491444608!3d-31.415344314950477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432987a4447cbeb%3A0x7abfd407da634c!2sParque%20Las%20Heras%20-%20Elisa!5e0!3m2!1ses-419!2sar!4v1695185163437!5m2!1ses-419!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24267.759589006582!2d-64.19471491444608!3d-31.415344314950477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432987a4447cbeb%3A0x7abfd407da634c!2sParque%20Las%20Heras%20-%20Elisa!5e0!3m2!1ses-419!2sar!4v1695185163437!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </p>
             <a href="https://www.facebook.com/?locale=es_LA"><img src="./img/facebook.png" alt=""></a>
             <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt=""></a>
             <a href="https://www.whatsapp.com/?lang=es_LA"><img src="./img/whatsapp.png" alt=""></a>

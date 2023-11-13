@@ -16,12 +16,11 @@ body {
 }
 
 .img-logo {
-    background-image: url(../img/ninfapet.jpg);
-    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.439), rgba(0, 0, 0, 0.462)), url(../img/ninfapet.jpg);
+    height: 231px;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    margin: 3px black;
     border: 3px solid black;
 }
 
@@ -30,15 +29,14 @@ body {
     text-align: center;
     color: black;
     padding: 15px;
-    color: yellow;
+    color: rgb(250, 250, 6);
     text-decoration: underline;
 }
 
 .nav ul li {
     margin: 20px;
     color: yellow;
-
-
+    list-style: none;
 }
 
 .nav nav ul {
@@ -105,7 +103,7 @@ body {
 .exoticos h2 {
     font-size: 40px;
     font-style: italic;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     width: 100%;
     height: 400px;
@@ -146,6 +144,25 @@ body {
     height: 380px;
 
 }
+.historia h2{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: beige;
+    font-style: italic;
+}
+.historia h3{
+    background-color: (0, 0, 0, 0.3);
+        color: beige;
+        font-size: 30px;
+        font-style: italic;
+}
+.marcas h4{
+font-size: 40px;
+background-color: black;
+color: yellow;
+text-align: center;
+font-style: italic;
+
+}
 
 .marcas div ul li {
     text-align: center;
@@ -155,12 +172,6 @@ body {
     margin: 10px;
 }
 
-.marcas h4 {
-    background-color: black;
-    color: yellow;
-    font-style: italic;
-    font-size: 35px;
-}
 
 .pezinfo {
     font-size: 25px;
@@ -184,8 +195,8 @@ body {
 }
 
 .pezmar img {
-    height: 250px;
-    width: 250px;
+    height: 295px;
+    width: 295px;
 }
 
 .pezmar div {
@@ -196,6 +207,10 @@ body {
     text-align: center;
 }
 
+.prperros .pr h3 {
+    font-size: 20px;
+    font-style: italic;
+}
 
 .prperros section h3 {
     color: black;
@@ -221,8 +236,8 @@ body {
 .prperros div {
     border: 2px solid black;
     margin: 20px;
-    width: 300px;
-    height: 450;
+    width: 255px;
+    height: 310px;
     text-align: center;
     background-color: bisque;
 }
@@ -275,17 +290,19 @@ body {
     color: black;
     text-align: center;
     width: 100%;
-    height: 800px;
+    height: 231px;
     background-image: url(../img/mujer\,perro.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+
 }
 
 .hero p {
     font-size: 25px;
     margin: 10px;
+    background-color: rgba(0, 0, 0, 0.49);
+    color: azure;
 }
 
 .hero h2 {
@@ -293,6 +310,8 @@ body {
     font-style: italic;
     border: 3px solid white;
     padding: 15px;
+    background-color: rgba(0, 0, 0, 0.474);
+    color: azure;
 }
 
 .img div img {
@@ -311,12 +330,20 @@ body {
 
 }
 
+.iframe p {
+    text-align: center;
+}
+
 .img .img-contenedor div {
     border: 2px solid black;
     width: 250px;
     height: 350px;
     margin: 20px;
     text-align: center;
+    transition: 1s;
+}
+.img .img-contenedor div:hover{
+    transform: scale(1.2);
 }
 
 .img div a {
@@ -369,11 +396,11 @@ body {
     justify-content: space-between;
 }
 
-.prperros {
+.prperros .pr {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    flex-direction: row-reverse;
 }
 
 .hero {
@@ -408,6 +435,10 @@ body {
 /*!-----------*/
 
 /*!-----main grid------*/
+.img .img-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+}
 
 .grid-exo {
     width: 100%;
@@ -442,6 +473,7 @@ body {
 
 }
 
+
 /*!-----------*/
 /*!----footer-------*/
 
@@ -453,18 +485,24 @@ body {
     margin: 45px;
 }
 
-.social img{
+.social .social-flex p {
+    font-size: 50px;
+
+}
+
+.social img {
     padding: 5px;
     width: 50px;
     height: 50px;
     margin: 45px;
 }
 
-.social iframe {
+iframe {
     width: 450px;
     height: 450px;
     margin: 45px;
 }
+
 
 /*!-----footer flex------*/
 
@@ -476,8 +514,9 @@ body {
 
 }
 
-.map {
-    width: 50%;
+.social-flex iframe {
+    width: 250px;
+    height: 250px;
 }
 
 .reg-flex {
@@ -485,6 +524,9 @@ body {
     justify-content: space-evenly;
     align-items: center;
     padding: 10px;
+    margin: 10px;
+    color: yellow;
+    background-color: black;
 }
 
 
@@ -493,7 +535,7 @@ body {
 
 /*!----media query-------*/
 
-@media screen and (max-width:583px) {
+@media screen and (max-width:620px) {
     .exoticos h2 {
         flex-direction: column;
         font-size: 30px;
@@ -503,18 +545,47 @@ body {
 }
 
 @media screen and (max-width:840px) {
-    header {
-        flex-direction: column;
+    .nav {
+        flex-direction: row;
         position: static;
     }
 
-    header nav ul {
-        flex-direction: column;
+    .nav nav ul {
+        flex-direction: row;
     }
 
-    header nav ul li {
-        margin: 0;
+    .nav nav ul li {
+        margin: 0px;
+        list-style: none;
     }
+}
+
+@media screen and (max-width:1322px) {
+    .nav {
+        flex-direction: row;
+        position: static;
+    }
+
+    .nav nav ul {
+        flex-direction: row;
+    }
+
+    .nav nav ul li {
+        margin: 20px;
+
+    }
+
+}
+
+@media screen and (max-width:727px) {
+    .nav nav ul li {
+        flex-direction: row;
+        margin: 10px;
+    }
+
+
+
+
 }
 
 @media screen and (max-width:1019px) {
@@ -558,28 +629,10 @@ body {
 
 }
 
-@media screen and (max-width:1324px) {
+@media screen and (max-width:1191px) {
     .reg-flex {
         flex-direction: column;
         margin: 0;
-    }
-
-}
-
-@media screen and (max-width:1100px) {
-    .nav {
-        flex-direction: column;
-        text-align: center;
-    }
-
-}
-
-@media screen and (max-width:839px) {
-    .nav ul {
-        justify-content: space-between;
-        flex-direction: row;
-
-
     }
 
 }

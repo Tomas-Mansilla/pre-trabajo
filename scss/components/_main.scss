@@ -1,0 +1,383 @@
+/*!----index------*/
+
+.img-logo {
+    img {
+        background: linear-gradient(rgba(0, 0, 0, 0.439), rgba(0, 0, 0, 0.462)), url(../img/ninfapet.jpg);
+        height: 231px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 3px solid black;
+    }
+
+}
+
+.hero {
+    color: $color-primario;
+    text-align: center;
+    width: 100%;
+    height: 231px;
+    background-image: url(../img/mujer\,perro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: 60px;
+        font-style: italic;
+        border: 2px solid white;
+        padding: 2px;
+        background-color: rgba(0, 0, 0, 0.474);
+        color: $color-terciario;
+        margin: 1px;
+    }
+
+    p {
+        font-size: 25px;
+        margin: 10px;
+        background-color: rgba(0, 0, 0, 0.49);
+        color: $color-terciario;
+    }
+}
+
+.iframe {
+
+    h2 {
+        background-color: $color-primario;
+        color: $color-secundario;
+        background-position: center;
+        font-style: italic;
+        font-size: 50px;
+        text-align: center;
+
+    }
+
+    p {
+        text-align: center;
+    }
+
+}
+
+.img {
+
+    .img-contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        transition: 1s;
+
+
+
+        div {
+            border: 2px solid black;
+            width: 250px;
+            height: 350px;
+            margin: 20px;
+            text-align: center;
+            transition: 1s;
+
+            &:hover {
+                transform: scale(1.2);
+
+            }
+
+
+            img {
+                width: 245px;
+                height: 245px;
+            }
+
+            a {
+                text-decoration: none;
+                color: $color-secundario;
+                background-color: black;
+                padding: 5px;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+/*!----------*/
+
+/*!-----exoticos-----*/
+.exoticos {
+    h2 {
+        font-size: 40px;
+        font-style: italic;
+        color: $color-terciario;
+        text-align: center;
+        width: 100%;
+        height: 400px;
+        background-image: url(../img/rana.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    div {
+        h3 {
+            background-color: black;
+            color: nth($color, 7);
+            font-size: 30px;
+            padding: 10px;
+        }
+
+        ul {
+            font-size: 20px;
+            text-decoration: none;
+
+            li {}
+        }
+    }
+
+    .tipexo {
+        h3 {
+            background-color: black;
+            color: nth($color, 7);
+            font-size: 40px;
+            font-style: italic;
+        }
+
+        h4 {
+            font-size: 25px;
+        }
+
+        h5 {
+            font-size: 25px;
+        }
+
+        h6 {
+            font-size: 25px;
+        }
+    }
+}
+
+.grid-exo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-auto-rows: 250px;
+    gap: 30px;
+    margin: 30px;
+
+    div {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+
+        h2 {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(172, 255, 47, 0.541);
+            color: nth($color, 3);
+            width: 100%;
+            padding: 5px;
+        }
+    }
+
+    .img-axolote {
+        grid-column: span 2;
+    }
+
+
+}
+
+/*!----------*/
+/*!-----productos-----*/
+.prperros {
+    background-color: nth($color, 1);
+    color: $color-primario;
+    text-align: center;
+    font-style: italic;
+
+    section {
+        h3 {
+            color: $color-primario;
+            text-align: center;
+            font-style: italic;
+            background-color: nth($color, 5);
+            font-size: 50px;
+        }
+    }
+
+    .pr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+
+        div {
+            border: 2px solid nth($color, 2);
+            margin: 20px;
+            width: 255px;
+            height: 310px;
+            text-align: center;
+            background-color: nth($color, 3);
+
+            img {
+                height: 250px;
+                width: 250px;
+            }
+
+            h3 {
+
+                font-size: 20px;
+                font-style: italic;
+            }
+
+            a {
+                text-decoration: none;
+                color: nth($color, 3);
+                background-color: nth($color, 2);
+            }
+        }
+    }
+}
+
+
+/*!----------*/
+/*!-----peces-----*/
+.pezinfo {
+    font-size: 25px;
+    margin: 20px;
+    background-color: nth($color, 4);
+
+    h2 {}
+
+    h3 {}
+}
+
+.especies {
+    font-size: 20px;
+    margin: 45px;
+    background-color: nth($color, 3);
+
+    div {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            margin: 50px;
+
+            li {}
+        }
+    }
+}
+
+section {
+    .pezmar {
+        h2 {
+            background-color: nth($color, 4);
+            font-size: 40px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .pezmar-img {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            div {
+                border: 2px solid nth($color, 2);
+                margin: 20px;
+                width: 300px;
+                height: 450;
+                text-align: center;
+                transition: 1s;
+
+                &:hover {
+                    transform: scale(1.2);
+
+                }
+
+                img {
+                    height: 295px;
+                    width: 295px;
+                }
+
+                h3 {}
+
+                a {}
+
+            }
+        }
+    }
+
+
+}
+
+
+/*!----------*/
+
+/*!----nosotros------*/
+.historia {
+    text-align: center;
+    color: $color-terciario;
+    font-size: 20px;
+    background-color: $color-primario;
+    font-style: italic;
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/plantas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 380px;
+
+    h2 {
+        background-color: rgba(0, 0, 0, 0.3);
+        color: $color-terciario;
+        font-style: italic;
+    }
+
+    h3 {
+        background-color: rgba(0, 0, 0, 0.3);
+        color: $color-terciario;
+        font-size: 30px;
+        font-style: italic;
+    }
+
+}
+
+.marcas {
+    h4 {
+        font-size: 40px;
+        background-color: $color-primario;
+        color: $color-secundario;
+        text-align: center;
+        font-style: italic;
+    }
+
+    div {
+        ul {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            list-style: none;
+
+            li {
+                text-align: center;
+                font-size: 25px;
+                margin: 10px;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+/*!----------*/
