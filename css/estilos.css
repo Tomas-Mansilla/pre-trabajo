@@ -14,33 +14,45 @@ body {
   background-color: white; }
 
 .nav {
-  height: 200px;
+  height: 200px; }
+
+.nav h1 {
+  text-align: center;
+  color: black;
+  padding: 15px;
+  color: #fafa06;
+  text-decoration: underline; }
+
+.nav ul li {
+  margin: 20px;
+  color: yellow;
+  list-style: none; }
+
+.nav nav ul {
+  color: black;
+  padding: 45px;
+  font-size: 30px; }
+
+.nav nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin: 2px;
+  color: yellow; }
+
+.nav ul {
+  display: flex; }
+
+.nav h1 {
+  display: flex;
+  flex-direction: row;
+  text-align: center; }
+
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: black; }
-  .nav h1 {
-    text-align: center;
-    color: black;
-    padding: 15px;
-    color: yellow;
-    text-decoration: underline;
-    display: flex;
-    flex-direction: row;
-    text-align: center; }
-  .nav nav ul {
-    margin: 10px;
-    font-size: 30px;
-    display: flex; }
-    .nav nav ul li {
-      margin: 20px;
-      color: yellow;
-      list-style: none; }
-      .nav nav ul li a {
-        text-decoration: none;
-        font-size: 20px;
-        margin: 2px;
-        color: yellow; }
 
 /*!----index------*/
 .img-logo img {
