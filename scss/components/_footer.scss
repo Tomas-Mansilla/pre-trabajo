@@ -1,6 +1,7 @@
 /*!--------*/
 
 .social {
+    background-color: rgb(0, 0, 0);
     h2 {
         text-align: center;
         color: yellow;
@@ -14,6 +15,17 @@
         justify-content: space-evenly;
         align-items: center;
         padding: 20px;
+        ul{
+            color: white;
+            border: 10px wheat dashed;
+            padding: 50px;
+            h3{
+                font-style: unset;
+            }
+            li{
+                font-size: 20px;
+            }
+        }
         p {
             font-size: 50px;
 
@@ -42,24 +54,3 @@
 }
 
 /*!----------*/
-
-.reg-flex {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px;
-    color: yellow;
-    background-color: black;
-
-    div {
-        label {}
-
-        input {}
-    }
-
-    div {
-        select {
-            option {}
-        }
-    }
-}

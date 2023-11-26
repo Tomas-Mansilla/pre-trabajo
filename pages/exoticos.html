@@ -8,6 +8,7 @@
     <!--boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!--css-->
     <!--<link rel="stylesheet" href="../css/style.css">-->
     <link rel="stylesheet" href="../css/estilos.css">
@@ -34,18 +35,28 @@
 </head>
 
 <body>
-    <header class="nav">
-        <h1>Animales Exoticos</h1>
-        <nav class="nav nav-pills flex-column flex-sm-row">
-            <ul>
-                <li> <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="../index.html">Incio</a>
-                </li>
-                <li> <a class="flex-sm-fill text-sm-center nav-link" href="./nosotros.html">Nosotros</a></li>
-                <li> <a class="flex-sm-fill text-sm-center nav-link" href="./productos.html">Productos</a></li>
-                <li> <a class="flex-sm-fill text-sm-center nav-link" href="./exoticos.html">Exoticos</a></li>
-                <li> <a class="flex-sm-fill text-sm-center nav-link" href="./peces.html">Peces</a></li>
-
-            </ul>
+    <header  class="nav nav-pills flex-column flex-sm-row">
+        <img src="..//img/logo-ninfa2.jpg" alt="logo de Ninfapetshop">
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <div class="bg-dark p-4">
+                <ul>
+                    <li><a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li><a class="flex-sm-fill text-sm-center nav-link" href="../pages/nosotros.html">Nosotros</a></li>
+                    <li><a class="flex-sm-fill text-sm-center nav-link" href="../pages/productos.html">Productos</a></li>
+                    <li><a class="flex-sm-fill text-sm-center nav-link" href="../pages/exoticos.html">Exóticos</a></li>
+                    <li><a class="flex-sm-fill text-sm-center nav-link" href="../pages/peces.html">Peces</a></li>
+                </ul>
+              <span class="text-body-secondary">Aqui mas informacion de nuestra pagina.</span>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
     </header>
     <main>
 
@@ -107,60 +118,15 @@
         </section>
 
     </main>
-    <main>
-
-        <section class="reg-flex">
-            <div>
-                <label for="">Nombre</label>
-                <input type="text" name="" id="nombre">
-            </div>
-            <div>
-                <label for="">Apellido</label>
-                <input type="text" name="" id="apellido">
-            </div>
-            <div>
-                <label for="">Contraseña</label>
-                <input type="password" name="" id="contrasena">
-            </div>
-            <div>
-                <label for="">Correo</label>
-                <input type="email" name="" id="correo">
-            </div>
-            <div>
-                <label for="">genero:</label>
-                <div>
-                    <label for="masculino">Masculino</label>
-                    <input type="radio" name="genero">
-
-                    <label for="femenino">Femenino</label>
-                    <input type="radio" name="genero">
-
-                    <label for="otro">otro</label>
-                    <input type="radio" name="genero">
-                </div>
-            </div>
-            <div>
-                <select name="" id="">
-                    <option value="">Argetina</option>
-                    <option value="">Estados Unidos</option>
-                    <option value="">China</option>
-                </select>
-            </div>
-            <div>
-                <label for="">Escribe tu Comentario</label>
-                <textarea name="" id="" cols="15" rows="10"></textarea>
-            </div>
-            <div>
-                <input type="submit">
-                <input type="reset">
-
-            </div>
-        </section>
-        </section>
-    </main>
     <footer class="social">
         <h2>Nuestras Redes Sociales</h2>
         <div class="social-flex">
+            <ul>
+                <h3>Nuestra Ubicacion</h3>
+                <li>Armada Argentina 594</li>
+                <li>Córdoba - Argentina</li>
+                <li>WhatsApp: +54-3518616254</li>
+            </ul>
             <p>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24267.759589006582!2d-64.19471491444608!3d-31.415344314950477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432987a4447cbeb%3A0x7abfd407da634c!2sParque%20Las%20Heras%20-%20Elisa!5e0!3m2!1ses-419!2sar!4v1695185163437!5m2!1ses-419!2sar"

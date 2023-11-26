@@ -106,9 +106,9 @@
 /*!-----exoticos-----*/
 .exoticos {
     h2 {
-        font-size: 40px;
+        font-size: 30px;
         font-style: italic;
-        color: $color-terciario;
+        color: white;
         text-align: center;
         width: 100%;
         height: 400px;
@@ -125,6 +125,7 @@
             color: nth($color, 7);
             font-size: 30px;
             padding: 10px;
+            text-align: center;
         }
 
         ul {
@@ -194,8 +195,8 @@
 /*!----------*/
 /*!-----productos-----*/
 .prperros {
-    background-color: nth($color, 1);
-    color: $color-primario;
+    background-color: rgba(245, 222, 179, 0.583);
+    color: black;
     text-align: center;
     font-style: italic;
 
@@ -204,8 +205,9 @@
             color: $color-primario;
             text-align: center;
             font-style: italic;
-            background-color: nth($color, 5);
+            background-color: black;
             font-size: 50px;
+            color: white;
         }
     }
 
@@ -221,7 +223,7 @@
             width: 255px;
             height: 310px;
             text-align: center;
-            background-color: nth($color, 3);
+            background-color: white;
 
             img {
                 height: 250px;
@@ -237,7 +239,7 @@
             a {
                 text-decoration: none;
                 color: nth($color, 3);
-                background-color: nth($color, 2);
+                background-color: gray;
             }
         }
     }
@@ -249,11 +251,15 @@
 .pezinfo {
     font-size: 25px;
     margin: 20px;
-    background-color: nth($color, 4);
+    background-color: black;
 
-    h2 {}
+    h2 {
+        color: white;
+    }
 
-    h3 {}
+    h3 {
+        color: white;
+    }
 }
 
 .especies {
@@ -349,12 +355,14 @@ section {
 }
 
 .marcas {
+
     h4 {
         font-size: 40px;
         background-color: $color-primario;
         color: $color-secundario;
         text-align: center;
         font-style: italic;
+
     }
 
     div {
@@ -362,16 +370,15 @@ section {
             display: flex;
             flex-direction: row-reverse;
             justify-content: space-between;
-            list-style: none;
 
             li {
-                text-align: center;
-                font-size: 25px;
-                margin: 10px;
+                border: 5px black groove;
+
+                img {}
             }
         }
-    }
 
+    }
 }
 
 

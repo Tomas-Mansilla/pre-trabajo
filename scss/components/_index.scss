@@ -1,89 +1,98 @@
-
-
-    .img-logo {
-        img{
-            background: linear-gradient(rgba(0, 0, 0, 0.439), rgba(0, 0, 0, 0.462)), url(../img/ninfapet.jpg);
-            height: 400px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            margin: 3px black;
-            border: 3px solid black;
-        }
-       
-    }
-    
-    .hero {
-        color: black;
-        text-align: center;
-        width: 100%;
-        height: 800px;
-        background-image: url(../img/mujer\,perro.jpg);
+.img-logo {
+    img {
+        height: 250px;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    
-        h2 {
-            font-size: 60px;
-            font-style: italic;
-            border: 3px solid white;
-            padding: 15px;
-        }
-    
-        p {
-            font-size: 25px;
-            margin: 10px;
-        }
+        margin: 3px black;
+        border: 3px solid black;
     }
-    
-    .iframe {
-    
-        h2 {
-            background-color: black;
-            color: yellow;
-            background-position: center;
-            font-style: italic;
-            font-size: 50px;
-            text-align: center;
-    
-        }
-    
-    }
-    
-    .img {
-    
-        .img-contenedor {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            
-          
-    
-            div {
-                border: 2px solid black;
-                width: 250px;
-                height: 350px;
-                margin: 20px;
-                text-align: center;
-                transition: 1s;
-                &:hover{
-                    transform: scale(1.5);
 
-                }
-    
-                img {
-                    width: 245px;
-                    height: 245px;
-                }
-    
-                a {
-                    text-decoration: none;
-                    color: yellow;
-                    background-color: black;
-                    padding: 5px;
-                    margin: 10px;
-                }
+}
+
+.hero {
+    color: black;
+    text-align: center;
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: none;
+
+
+    h2 {
+        font-size: 60px;
+        font-style: italic;
+        border: 3px solid white;
+        padding: 15px;
+    }
+
+    p {
+        font-size: 25px;
+        margin: 10px;
+    }
+}
+
+.iframe {
+
+    h2 {
+        background-color: black;
+        color: yellow;
+        background-position: center;
+        font-style: italic;
+        font-size: 50px;
+        text-align: center;
+
+    }
+
+    p {
+        iframe {
+            border: 10px black inset;
+            margin: 20px;
+            width: 560px;
+
+
+        }
+    }
+
+}
+
+.img {
+
+    .img-contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        justify-items: center;
+
+
+
+        div {
+            border: 2px solid black;
+            width: 255px;
+            height: 350px;
+            margin: 20px;
+            text-align: center;
+            transition: 1s;
+            border: 5px black double;
+
+            &:hover {
+                transform: scale(1.1);
+
+            }
+
+            img {
+                width: 245px;
+                height: 245px;
+            }
+
+            a {
+                text-decoration: none;
+                color: yellow;
+                background-color: black;
+                padding: 5px;
+                margin: 0px;
             }
         }
     }
+}

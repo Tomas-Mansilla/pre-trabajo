@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: rgba(245, 222, 179, 0.583);
 }
 
 .nav {
@@ -17,13 +17,12 @@ body {
     text-align: center;
     color: black;
     padding: 15px;
-    color: rgb(250, 250, 6);
     text-decoration: underline;
 }
 
 .nav ul li {
     margin: 20px;
-    color: yellow;
+    color: black;
     list-style: none;
 }
 
@@ -39,7 +38,7 @@ body {
     color: black;
     font-size: 20px;
     margin: 2px;
-    color: yellow;
+    color: black;
 }
 
 .nav ul {
@@ -57,5 +56,30 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: white;
 }
+ .nav img{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-content: flex-start;
+    
+ }
+ .bg-dark{
+    font-size: 20px;
+    ul{
+        background-color: white;
+        li{
+            background-color: white;
+            a{
+                color: black;
+            }
+        }
+    }
+ }
+
+ #carouselExampleDark{
+    width: 500px;
+    height: 470px;
+    
+ }
